@@ -108,6 +108,8 @@ in makePackage {
 
   passthru.deps = deps;
 
+  requiredSystemFeatures = [ "big-parallel" ];
+
   meta = with lib; {
     homepage = "http://openjdk.java.net/projects/openjfx/";
     license = licenses.gpl2;
